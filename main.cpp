@@ -8,8 +8,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
-    //return 0;
+    /*cout << "Hello World!" << endl;
+    //return 0;*/
+
     QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL");
     db.setDatabaseName("postgres");
     db.setHostName("localhost");
@@ -21,5 +22,11 @@ int main()
     else {
         qDebug()<<"soedinilos";
     }
-
+QSqlQuery qwery;
+/*qwery.exec("create table rewq("
+            "qaz int not null,"
+           "wsx int not null)");
+    qwery.exec("drop table rewq");*/
+//qwery.exec("insert into dsfdfgdg (qwer,asdf,zxcv) value(1,2,3)");
+//qwery.exec("select * from dsfdfgdg");
 }
