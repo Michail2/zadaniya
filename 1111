@@ -1,0 +1,5 @@
+﻿create table tabla
+(
+zxc int primary key,
+vbn int not null,
+mlp int not null);

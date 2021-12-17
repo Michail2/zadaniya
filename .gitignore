@@ -71,5 +71,5 @@ Thumbs.db
 *.dll
 *.exe
 .git
-build123
+/build123
 CMakeLists.txt.user

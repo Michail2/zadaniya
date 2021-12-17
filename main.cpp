@@ -4,29 +4,40 @@
 #include <QDebug>
 #include <QSqlError>
 #include <QSqlQuery>
+#include <QFile>
+#include <QTextStream>
+#include <QString>
+#include "qwe.h"
+
+
+
 using namespace std;
 
 int main()
 {
-    /*cout << "Hello World!" << endl;
-    //return 0;*/
+class1 p("postgres","localhost","postgres","ahbrfltkmrf228");
+  p.Connect();
+   QFile file("/home/misha/untitled1/file2.csv");
+            if (!file.open(QIODevice::ReadOnly))
+            {
+                qDebug()<<"not";
+            }
+        while (!file.atEnd())
+            { QString line;
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL");
-    db.setDatabaseName("postgres");
-    db.setHostName("localhost");
-    db.setUserName("postgres");
-    db.setPassword("ahbrfltkmrf228");
-    if (!db.open()){
-        qDebug()<< db.lastError().text();
+                 line = file.readLine();
+           QStringList a;
+           a= line.split(",");
+           p.Insert(a[0],a[1],a[2]);
+            }
+       QFile file1("/home/misha/untitled1/123.csv");
+        if (file1.open(QIODevice::WriteOnly))
+        p.Select();
+
 }
-    else {
-        qDebug()<<"soedinilos";
-    }
-QSqlQuery qwery;
-/*qwery.exec("create table rewq("
-            "qaz int not null,"
-           "wsx int not null)");
-    qwery.exec("drop table rewq");*/
-//qwery.exec("insert into dsfdfgdg (qwer,asdf,zxcv) value(1,2,3)");
-//qwery.exec("select * from dsfdfgdg");
-}
+
+
+
+
+
+
