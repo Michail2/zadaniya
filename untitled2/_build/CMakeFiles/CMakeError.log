@@ -1,0 +1,135 @@
+Performing C SOURCE FILE Test MSan_FLAG_DETECTED failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_09522"
+[1/2] Building C object CMakeFiles/cmTC_09522.dir/src.c.o
+FAILED: CMakeFiles/cmTC_09522.dir/src.c.o 
+/usr/bin/gcc    -DMSan_FLAG_DETECTED -g -fsanitize=memory   -g -fsanitize=memory -o CMakeFiles/cmTC_09522.dir/src.c.o   -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized argument to -fsanitize= option: 'memory'
+gcc: error: unrecognized argument to -fsanitize= option: 'memory'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFI_FLAG_DETECTED failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_7cccf"
+[1/2] Building C object CMakeFiles/cmTC_7cccf.dir/src.c.o
+FAILED: CMakeFiles/cmTC_7cccf.dir/src.c.o 
+/usr/bin/gcc    -DCFI_FLAG_DETECTED -g -fsanitize=cfi -fvisibility=hidden -flto -fuse-ld=lld   -g -fsanitize=cfi -fvisibility=hidden -flto -fuse-ld=lld -o CMakeFiles/cmTC_7cccf.dir/src.c.o   -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized argument to -fsanitize= option: 'cfi'
+gcc: error: unrecognized argument to -fsanitize= option: 'cfi'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test SS_FLAG_DETECTED failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_d255c"
+[1/2] Building C object CMakeFiles/cmTC_d255c.dir/src.c.o
+FAILED: CMakeFiles/cmTC_d255c.dir/src.c.o 
+/usr/bin/gcc    -DSS_FLAG_DETECTED -g -fsanitize=safe-stack   -g -fsanitize=safe-stack -o CMakeFiles/cmTC_d255c.dir/src.c.o   -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized argument to -fsanitize= option: 'safe-stack'
+gcc: error: unrecognized argument to -fsanitize= option: 'safe-stack'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_dbce3"
+[1/2] Building CXX object CMakeFiles/cmTC_dbce3.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_dbce3.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -Wrestrict -o CMakeFiles/cmTC_dbce3.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-Wrestrict'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_860c6"
+[1/2] Building CXX object CMakeFiles/cmTC_860c6.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_860c6.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -Waligned-new -o CMakeFiles/cmTC_860c6.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-Waligned-new'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_95292"
+[1/2] Building CXX object CMakeFiles/cmTC_95292.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_95292.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -fdiagnostics-parseable-fixits -o CMakeFiles/cmTC_95292.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-fdiagnostics-parseable-fixits'; did you mean '-fdiagnostics-show-caret'?
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_7d728"
+[1/2] Building CXX object CMakeFiles/cmTC_7d728.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_7d728.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -fdiagnostics-generate-patch -o CMakeFiles/cmTC_7d728.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-fdiagnostics-generate-patch'; did you mean '-fdiagnostics-color=always'?
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_70e96"
+[1/2] Building CXX object CMakeFiles/cmTC_70e96.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_70e96.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -Wcast-align=strict -o CMakeFiles/cmTC_70e96.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-Wcast-align=strict'; did you mean '-Wcast-align'?
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_3cb9e"
+[1/2] Building CXX object CMakeFiles/cmTC_3cb9e.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_3cb9e.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG   -fdiagnostics-show-template-tree -o CMakeFiles/cmTC_3cb9e.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-fdiagnostics-show-template-tree'; did you mean '-fdiagnostics-show-caret'?
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_01c78"
+[1/2] Building CXX object CMakeFiles/cmTC_01c78.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_01c78.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -Wshadow-all -o CMakeFiles/cmTC_01c78.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-Wshadow-all'; did you mean '-Wshadow'?
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CHECK_CXX_FLAG_DEBUG failed with the following output:
+Change Dir: /home/misha/untitled2/_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_3d37a"
+[1/2] Building CXX object CMakeFiles/cmTC_3d37a.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_3d37a.dir/src.cxx.o 
+/usr/bin/g++     -DCHECK_CXX_FLAG_DEBUG   -Waddress-of-packed-member -o CMakeFiles/cmTC_3d37a.dir/src.cxx.o -c /home/misha/untitled2/_build/CMakeFiles/CMakeTmp/src.cxx
+g++: error: unrecognized command line option '-Waddress-of-packed-member'
+ninja: build stopped: subcommand failed.
+
+Source file was:
+int main() { return 0; }

@@ -1,33 +1,29 @@
 #include "class.hpp"
+#include "form.hpp"
+#include <QApplication>
+#include <QIcon>
+#include <QTranslator>
 using namespace std;
-int main()
+int main( int argc, char** argv )
 {
-    DatabaseWork dbWork("postgres","localhost","postgres","ahbrfltkmrf228");
-    dbWork.Connect();
-    QFile input_file("/home/misha/untitled2/1/2/file2.csv");
-    if (!input_file.open(QIODevice::ReadOnly))
+    QApplication app( argc, argv );
+
+    // Подключение переводов в зависимости от текущей локали
+    /*auto* translator = new QTranslator( QApplication::instance() );
+    if ( translator->load( QLocale(), MYX_CMAKE_PROJECT_NAME, QStringLiteral( "_" ), QStringLiteral( ":/qm" ) ) )
     {
-        qDebug()<<"file not found";
-        return 0;
+        QApplication::installTranslator( translator );
     }
-    else
-    {
-    while (!input_file.atEnd())
-    {
-        QString line = input_file.readLine();
-        QStringList list = line.split(",");
-        dbWork.Insert(list[0],list[1],list[2]);
-    }
-    }
-    input_file.close();
-    QFile output_file("/home/misha/untitled2/1/2/123.csv");
-    if (!output_file.open(QIODevice::WriteOnly))
-    {
-        qDebug()<<"file not found";
-        return 0;
-    }
-        QTextStream stream(&output_file);
-        QString lines = dbWork.Select();
-        stream<<lines;
-        output_file.close();
+
+    // Установка иконки для программы
+    QApplication::setWindowIcon( QIcon( ":/icon/icon.png" ) );*/
+
+    // Создание и отображение главного окна
+    auto* w = new Form();
+    w->show();
+    return( QApplication::exec() );
+}
+int main1()
+{
+
 }

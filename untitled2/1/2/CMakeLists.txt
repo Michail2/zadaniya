@@ -8,17 +8,20 @@ set(TRGT untitled2)
 # Исходные коды
 set(TRGT_cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/class.cpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/class.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/form.cpp)
 
 # Заголовочные файлы, для которых необходима обработка препроцессором moc
 # (содержат класс, унаследованный от QObject, использующий сигналы и/или слоты)
 set(TRGT_moc_hpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/class.hpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/class.hpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/form.hpp)
 # Другие заголовочные файлы
 set(TRGT_hpp)
 
 # Файлы с описанием графического интерфейса для Qt
-set(TRGT_ui)
+set(TRGT_ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/form.ui)
 
 # Файлы описания ресурсов, включаемых в исполняемый файл
 
@@ -33,7 +36,7 @@ set(TRGT_headers ${TRGT_hpp} ${TRGT_moc_hpp})
 
 # Правило для автоматической генерации препроцессором moc
 qt5_wrap_cpp(TRGT_moc_cpp ${TRGT_moc_hpp})
-
+qt5_wrap_ui(TRGT_ui_h ${TRGT_ui})
 # Поиск строк для локализации в файлах, перечисленных в ${TRGT_cpp} ${TRGT_ui}
 # Создание и обновление файлов переводов в каталоге ${CMAKE_SOURCE_DIR}/l10n
 # Интеграция переводов в исполняемый файл для подключения классом QTranslator

@@ -1,0 +1,16 @@
+# ninja log v5
+1	2	0	1/2/CMakeFiles/untitled2_ru_RU.ts	a05a1334025f855c
+0	50	0	1/2/CMakeFiles/myx-cmake-symlinks-to-project-directories	53f85c097fe6967c
+2	50	0	1/2/CMakeFiles/untitled2-default-directories	e5c0f4b9c68a8c89
+50	59	0	1/2/ui_form.h	de1e9163ea6305f8
+53	60	0	1/2/moc_class.cpp	62277a1fba59b2a7
+59	62	0	1/2/moc_form.cpp	fbb8e43eb4ea74b2
+60	71	0	untitled2_ru_RU.qm	bac9ab08b06c4018
+71	74	0	1/2/qrc_untitled2_l10n.cpp	4371efcca688db25
+74	98	0	1/2/CMakeFiles/untitled2.dir/moc_class.cpp.o	4e470f52457ab726
+98	178	0	1/2/CMakeFiles/untitled2.dir/qrc_untitled2_l10n.cpp.o	f01e96863d545ca0
+76	2229	0	1/2/CMakeFiles/untitled2.dir/moc_form.cpp.o	721cb8840f866846
+178	2358	0	1/2/CMakeFiles/untitled2.dir/main.cpp.o	df57ac5bf469b7b3
+2229	3699	0	1/2/CMakeFiles/untitled2.dir/class.cpp.o	bed6e5fe9624f999
+2359	4114	0	1/2/CMakeFiles/untitled2.dir/form.cpp.o	f5c70da14e8e0932
+4114	4351	0	bin/untitled2	f77a82380a8059fd
